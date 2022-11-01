@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pacientes</title>
+    
+</head>
+<body>
+    <h1>Pacientes</h1>
+    <fieldset>
+        <legend>Datos Personales</legend>
+        <form action="personales" method="get">
+            Nombre: <input type="text" name="nombre" size="20">
+            Apellido: <input type="text" name="apellido" size="20">
+            <p>DNI:
+                <input type="number" name="DNI" size="60" placeholder="Numero de documento">
+            </p>
+            <p>Año de nacimiento: <input type="date" name="fecha"></p>
+            <p>Sexo:
+              <input type="radio" name="hm" value="h"> Hombre
+              <input type="radio" name="hm" value="m"> Mujer
+            </p>
+            <p>Localidad: <input type="text" name="localidad" size="20"></p>
+            <p>Domicilio: <input type="text" name="domicilio" size="20"></p>
+            Email: <input type="email" name="Email" size="30">
+            <p>Telefono: <input type="tel" name="telefono"></p>
+            <p>Celular: <input type="tel" name="telefono"></p>
+    </fieldset>
+    <br>
+    <br>
+    <fieldset>
+        <legend>Datos Medicos</legend>
+        <p>Fecha y hora de alta medica: <input type="datetime-local" name="fecha"></p>
+        <p>Ocupacion:</p>
+        <textarea name="ocupacion" rows="4" cols="40" placeholder="Escriba su ocupacion"></textarea>
+        <p>Numero de Afiliado <input type="number" name="NumeroAfiliado" size="50"></p>
+    </fieldset>
+        <p>
+          <input type="submit" value="Enviar">
+          <input type="reset" value="Borrar">
+        </p>
+    </form>
+    
+</body>
+</html>
